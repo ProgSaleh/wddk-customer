@@ -1,0 +1,19 @@
+export enum ENDays {
+  Saturday,
+  Sundday,
+  Monday,
+  Teusday,
+  Wednesday,
+  Thirsday,
+  Friday,
+}
+
+export enum ARDays {
+  السبت,
+  الاحد,
+  الاثنين,
+  الثلاثاء,
+  الاربعاء,
+  الخميس,
+  الجمعة,
+}

@@ -1,0 +1,25 @@
+export class Menu {
+  constructor(
+    private id: number,
+    private name: string,
+    private categories: Category[]
+  ) {}
+}
+
+class Category {
+  constructor(
+    private id: number,
+    private name: string,
+    private foodItems: FoodItem[]
+  ) {}
+}
+
+class FoodItem {
+  constructor(
+    private id: number,
+    private name: string,
+    private imgSrs: string,
+    private itemType: string, // food or drink...
+    private price: number
+  ) {}
+}
