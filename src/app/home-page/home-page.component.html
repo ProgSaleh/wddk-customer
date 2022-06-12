@@ -1,1 +1,81 @@
-<p>home-page works!</p>
+<div class="wrapper">
+  <div class="container">
+    <h3>FIND YOUR GREAT TASTE</h3>
+    <p>Explore top rated places and restaurants in your area</p>
+
+    <!-- search form -->
+    <!-- <form> -->
+    <div class="row no-gutters custom-search-input-2">
+      <div class="col-lg-3 col-6">
+        <div class="form-group">
+          <input
+            [(ngModel)]="searchLocation"
+            type="text"
+            class="form-control"
+            placeholder="location"
+          />
+          <i class="fa fa-map-marker"></i>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <div class="form-group">
+          <input
+            [(ngModel)]="searchRestaurantName"
+            type="text"
+            class="form-control"
+            placeholder="Restaurant name"
+          />
+        </div>
+        <i class="icon-shop-1"></i>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <div class="form group">
+          <input
+            [(ngModel)]="searchDate"
+            (click)="date($event)"
+            placeholder="2022-06-11"
+            type="date"
+            class="form-control"
+          />
+          <i class="icon-calendar"></i>
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-3 col-6">
+          <div class="panel-dropdown">
+            <input type="text" class="qtyTotal" />
+            <div class="qtyButtons">
+              <label for=""></label>
+              <button class="qtyDec"></button>
+              <input type="text" />
+              <button class="qtyInc"></button>
+            </div>
+          </div>
+        </div> -->
+
+      <div class="col-lg-3 col-6">
+        <!-- <div class="panel-dropdown"> -->
+        <!-- <input type="hidden" class="qtyTotal" /> -->
+        <!-- <div class="qtyButtons"> -->
+        <label for=""></label>
+        <button style="border: 0; border-radius: 50%" class="p-2 m-2">
+          <span style="font-size: 1.3rem">+</span>
+        </button>
+        <span class="p-2" style="color: #000">1</span>
+        <button style="border: 0; border-radius: 50%" class="p-2 m-2">
+          <span style="font-size: 1.5rem">-</span>
+        </button>
+        <!-- </div> -->
+        <!-- </div> -->
+        <span style="padding: 0 1px; background: #ddd"></span>
+      </div>
+      <div class="col-lg-2 col-6">
+        <button style="margin-top: 10%" class="btn btn-search">Search</button>
+      </div>
+    </div>
+    <!-- </form> -->
+    <!-- end search form -->
+  </div>
+</div>

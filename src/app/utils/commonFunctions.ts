@@ -3,10 +3,10 @@
  *
  * @return true if ALL input chars are of number, else otherwise.
  */
-export function isOnlyNums(event: any): boolean {
+export function isOnlyNums(event: any, str: string): boolean {
   if (event) {
     if (event.length) {
-      let value = event.target.value;
+      let value = event.target.value || str;
       let regEx = /^\d+$/; // unlimited digits.. [max] and [min] are to be defined in the template.
       if (value.match(regEx)) {
         // event.preventDefault();

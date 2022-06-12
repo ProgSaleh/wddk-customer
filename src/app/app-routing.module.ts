@@ -15,9 +15,9 @@ import { UserReviewMessagesComponent } from './user-profile-page/user-review-mes
 import { UserSettingsComponent } from './user-profile-page/user-settings/user-settings.component';
 
 const routes: Routes = [
-  { path: 'restaurant-page', component: RestaurantPageComponent },
+  { path: 'rest', component: RestaurantPageComponent },
   { path: 'checkout-booking', component: BookingPageComponent },
-  { path: 'search-restaurants', component: SearchRestaurantsPageComponent },
+  { path: 'search-rests', component: SearchRestaurantsPageComponent },
   { path: 'booking-details', component: BookingDetailsPageComponent },
   { path: 'owner-sign-in', component: OwnerSignInPageComponent },
   { path: 'sign-in', component: UserSignInPageComponent },
@@ -26,13 +26,13 @@ const routes: Routes = [
     component: UserProfilePageComponent,
     children: [
       { path: 'bookings', component: UserBookingsComponent },
-      { path: 'fav-restaurants', component: UserFavRestaurantsComponent },
+      { path: 'fav-rests', component: UserFavRestaurantsComponent },
       { path: 'review-messages', component: UserReviewMessagesComponent },
       { path: 'settings', component: UserSettingsComponent },
     ],
   },
-  { path: '**', component: PageNotFoundPageComponent },
   { path: '', component: HomePageComponent },
+  { path: '**', component: PageNotFoundPageComponent },
 ];
 
 @NgModule({
